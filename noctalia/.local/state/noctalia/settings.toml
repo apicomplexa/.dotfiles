@@ -1,0 +1,246 @@
+config_version = 14
+
+[bar.default]
+border = "on_primary"
+border_width = 1.0
+capsule_fill = "on_primary"
+capsule_padding = 4.0
+capsule_thickness = 0.79999998584389687
+center = [ "launcher", "clock", "control-center" ]
+concave_edge_corners = false
+contact_shadow = true
+end = [
+    "media",
+    "tray",
+    "spacer_3",
+    "notifications",
+    "clipboard",
+    "widget",
+    "spacer_2",
+    "network",
+    "bluetooth",
+    "volume",
+    "keyboard_layout",
+    "battery",
+    "session"
+]
+font_scale = 0.82999998889863491
+margin_edge = 3
+margin_ends = 5
+padding = 10
+radius = 10
+reserve_space = false
+scale = 1.1000000089406967
+smart_auto_hide = true
+start = [ "workspaces", "ribbon", "active_window" ]
+thickness = 25
+
+[calendar]
+enabled = true
+
+    [calendar.account.apicomplexa]
+    type = "google"
+
+[control_center]
+width = 810
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+active_monitor_only = true
+background_opacity = 0.99999997764825821
+concave_edge_corners = false
+enabled = true
+icon_size = 30
+item_spacing = 0
+launcher_position = "end"
+magnification = false
+main_axis_padding = 8
+margin_edge = 2
+position = "left"
+reserve_space = false
+smart_auto_hide = true
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 464.0
+    cy = 800.0
+    output = "winit"
+    placement_height = 982.0
+    placement_width = 928.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[plugin_settings."alexander/screen-toolkit"]
+hide-cursor = false
+panel_position = "top_right"
+record-audio-out = true
+record-copy-to-clipboard = true
+result_layer = "overlay"
+selected-ocr-lang = "eng+ru"
+
+[plugins]
+auto_update = "none"
+enabled = [ "noctalia/bitwarden", "thaer99ob/default-apps", "alexander/screen-toolkit", "luochen1990/niri-ribbon" ]
+
+[shell]
+niri_overview_type_to_launch_enabled = true
+polkit_agent = true
+settings_window_translucent = true
+
+    [shell.launcher]
+    fetch_exchange_rates = false
+    show_app_actions = true
+
+        [shell.launcher.providers.calculator]
+        global = false
+
+        [shell.launcher.providers.panels]
+        global = false
+
+        [shell.launcher.providers.windows]
+        global = false
+
+    [shell.panel]
+    control_center_placement = "floating"
+    open_near_click_control_center = true
+
+[theme]
+builtin = "Ayu"
+community_palette = "ADW"
+custom_palette = "oig-15-waifu2x-photo-noise3-scale-fth"
+mode = "dark"
+pure_black_dark = true
+shell_mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "soft"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "niri", "qt" ]
+    community_ids = [ "claude-code", "telegram", "vscode" ]
+
+[wallpaper]
+directory = "/home/apicomplexa/Pictures"
+fill_color = "#000000"
+fill_mode = "fit"
+
+    [wallpaper.default]
+    path = "/home/apicomplexa/Pictures/wallpapers/OIG (15)_waifu2x_photo_noise3_scale.png"
+
+    [wallpaper.last]
+    path = "/home/apicomplexa/Pictures/wallpapers/OIG (15)_waifu2x_photo_noise3_scale.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/apicomplexa/Pictures/wallpapers/OIG (15)_waifu2x_photo_noise3_scale.png"
+
+    [[wallpaper.favorite]]
+    custom_palette = "oig-15-waifu2x-photo-noise3-scale-fth"
+    palette_source = "custom"
+    path = "/home/apicomplexa/Изображения/wallpapers/OIG (15)_waifu2x_photo_noise3_scale.png"
+    theme_mode = "dark"
+
+[widget.active_window]
+title_scroll = "on_hover"
+
+[widget.clock]
+anchor = true
+format = "{:%d.%m.%Y  %H:%M}"
+
+[widget.control-center]
+glyph = "menu-2"
+
+[widget.media]
+hide_when_no_media = true
+title_scroll = "on_hover"
+
+[widget.network]
+show_label = false
+show_vpn_label = true
+vpn_status = "both"
+
+[widget.notifications]
+enabled = false
+
+[widget.ribbon]
+capsule_fill = "on_hover"
+gaps = 5.0
+radius = 6.0
+scale = 0.60000000000000009
+thickness = 5.0
+type = "luochen1990/niri-ribbon:ribbon"
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.spacer_3]
+type = "spacer"
+
+[widget.widget]
+type = "alexander/screen-toolkit:widget"
+
+[widget.workspaces]
+label_source = "name"
+labels_only_when_occupied = true
